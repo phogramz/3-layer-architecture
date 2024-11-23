@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ec180db-69e7-4834-acbc-f5a67e837781" name="Changes" comment="add app files&#10;add  venv to gitignore">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="2ec180db-69e7-4834-acbc-f5a67e837781" name="Changes" comment="integration btw web-server and app-server&#10;add requirements.txt (pipreqs)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/application_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/application_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/web_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732397471601</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="integration btw web-server and app-server&#10;add requirements.txt (pipreqs)">
+      <created>1732400204106</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732400204106</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +104,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="add app files&#10;add  venv to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add app files&#10;add  venv to gitignore" />
+    <MESSAGE value="integration btw web-server and app-server&#10;add requirements.txt (pipreqs)" />
+    <option name="LAST_COMMIT_MESSAGE" value="integration btw web-server and app-server&#10;add requirements.txt (pipreqs)" />
   </component>
 </project>

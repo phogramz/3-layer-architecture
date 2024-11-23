@@ -1,23 +1,26 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 import requests
 
-app = FastAPI(title="Web Server API")
+app = FastAPI(title="Web Server API", version="1.0")
 
-# Модель данных для запроса
-class Numbers(BaseModel):
-    num1: int = Field(..., title="Первое число", description="Целое число")
-    num2: int = Field(..., title="Второе число", description="Целое число")
+class NumberRequest(BaseModel):
+    number: int
 
-@app.post("/add/")
-async def add_numbers(numbers: Numbers):
-    # Передаем данные на сервер приложений
+@app.post("/process-number")
+async def process_number(data: NumberRequest):
+    number = data.number
+    if number <= 0:
+        raise HTTPException(status_code=400, detail="Number must be a positive integer")
+
+    # Отправляем запрос на сервер приложений
     try:
-        response = requests.post("http://127.0.0.1:8001/process/", json=numbers.dict())
+        response = requests.post(
+            "http://localhost:8001/process-number", json={"number": number}
+        )
         response.raise_for_status()
-    except requests.exceptions.HTTPError as err:
-        raise HTTPException(status_code=response.status_code, detail=response.json().get("detail", "Unknown error"))
-    except requests.RequestException:
-        raise HTTPException(status_code=500, detail="Ошибка связи с сервером приложений")
-
-    return {"result": response.json()["result"]}
+        return response.json()
+    except requests.exceptions.HTTPError as http_err:
+        raise HTTPException(status_code=response.status_code, detail=response.json())
+    except Exception as err:
+        raise HTTPException(status_code=500, detail="Failed to connect to application server")
