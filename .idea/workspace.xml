@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ec180db-69e7-4834-acbc-f5a67e837781" name="Changes" comment="add postgresql&#10;update main business logic according to the task">
-      <change afterPath="$PROJECT_DIR$/documentation/task" afterDir="false" />
+    <list default="true" id="2ec180db-69e7-4834-acbc-f5a67e837781" name="Changes" comment="add documentation (diagrams)">
+      <change afterPath="$PROJECT_DIR$/testing/sql test scripts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +30,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/documentation" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Максим\OneDrive\Рабочий стол\ВШЭ\Модуль 5-6\РВС (распределенные вычислительные системы)\achive 2\code\documentation" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -92,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732406282821</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add documentation (diagrams)">
+      <created>1732407199523</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732407199523</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +124,7 @@
     <MESSAGE value="add app files&#10;add  venv to gitignore" />
     <MESSAGE value="integration btw web-server and app-server&#10;add requirements.txt (pipreqs)" />
     <MESSAGE value="add postgresql&#10;update main business logic according to the task" />
-    <option name="LAST_COMMIT_MESSAGE" value="add postgresql&#10;update main business logic according to the task" />
+    <MESSAGE value="add documentation (diagrams)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add documentation (diagrams)" />
   </component>
 </project>

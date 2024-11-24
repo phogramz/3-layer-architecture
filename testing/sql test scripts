@@ -1,0 +1,2 @@
+select * from "3lrar_history" lh
+left join "3lrar_received_numbers" lrn ON lh.received_number_id = lrn.id
